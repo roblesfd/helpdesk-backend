@@ -19,7 +19,7 @@ const emailConfirmacion = async (datos) => {
     html: `
         <p>Hola ${nombre}, confirma tu cuenta en helpdesk.com</p>
         <p>Tu cuenta ya esta lista, solo debes confirmarla en el siguiente enlace:
-        <a href="${process.env.FRONTEND_URL}:${process.env.FRONTEND_PORT}/confirmar/${token}">Confirmar cuenta </a>
+        <a href="${process.env.FRONTEND_URL_PROD}/confirmar/${token}">Confirmar cuenta </a>
         <p>Si tu no creaste esta cuenta, puedes ignorar el mensaje</p>
     `,
   });
